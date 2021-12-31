@@ -1,0 +1,91 @@
+#!/usr/bin/python
+from __future__ import print_function
+
+import sys, os, subprocess, re, glob, argparse,time
+import tempfile
+from colorama import init
+init(autoreset=True)
+
+
+ref = "./basesim"
+sim = "./sim"
+
+if os.name == 'nt':
+    ref = "basesim.exe"
+    sim = "sim.exe"
+
+bold="\033[1m"
+green="\033[0;32m"
+red="\033[0;31m"
+normal="\033[0m"
+
+def main():
+    all_inputs = glob.glob("inputs/*/*.x")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("inputs", nargs="*", default=all_inputs)
+    parser = parser.parse_args()
+    error_sum = 0
+    tasks = 0
+    for i in parser.inputs:
+        if not os.path.exists(i):
+            print(red + "ERROR -- input file (*.x) not found: " + i + normal)
+            continue
+        print(bold + "Testing: " + normal + i)
+        ref_out, sim_out = run(i)
+        print( "  " + "Stats".ljust(14) + "BaselineSim".center(14) + "YourSim".center(14))
+        ref_out = ref_out.split("\n")
+        sim_out = sim_out.split("\n")
+        nocheck = 0
+        error = 0
+        tasks += 1
+        for r, s in zip(ref_out, sim_out):
+            r0 = r.split()[0]
+            r1 = r.split()[-1]
+            s1 = s.split()[-1]
+            print( "  " + r0.ljust(14) + r1.center(14) + s1.center(14))
+            if r.startswith("Cycles"):
+                nocheck = 1
+            if (r1 != s1 and nocheck == 0):
+                print("  " + red + "ERROR" + normal)
+                error = 1
+        if error == 0:
+            print("  " + green + "REGISTER CONTENTS OK" + normal)
+        else: error_sum += 1
+        print()
+    if error_sum == 0:
+        print("  " + green + "  " + str(tasks) + " tasks, ALL PASS!" + normal)
+    else:
+        print("  " + red   + "BAD, CHECK FOR ERRORS!" + normal)
+
+def sub_run(execs, cmds):	
+    proc = subprocess.Popen(' '.join(execs), shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    (outs, errs) = proc.communicate(input=cmds.encode())
+    if len(outs) == 0:
+        return sub_run(execs, cmds)
+    return (outs, errs)
+
+def run(i):
+    global ref, sim
+    refexec = [ref, i]
+    simexec = [sim, i]
+    cmds = ""
+    cmdfile = os.path.splitext(i)[0] + ".cmd"
+    if os.path.exists(cmdfile):
+        cmds += open(cmdfile).read()
+    cmds += "\ngo\nrdump\nquit\n"
+    (r, r_err) = sub_run(refexec, cmds)
+    (s, s_err) = sub_run(simexec, cmds)
+    return filter_stats(r), filter_stats(s)
+
+def filter_stats(out):
+    lines = out.split("\n".encode())
+    regex = re.compile("^(HI:)|(LO:)|(R\d+)|(Cycles)|(Fetched\w+)|(Retired\w+)|(IPC)|(Flushes).*$")
+    out = []
+    for l in lines:
+        if regex.match(l.decode()):
+          out.append(l.decode())
+    return "\n".join(out)
+
+if __name__ == "__main__":
+    main()
+

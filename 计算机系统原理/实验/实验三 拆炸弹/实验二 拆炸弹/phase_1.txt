@@ -1,0 +1,42 @@
+gdb操作
+b* 0x00400d90
+r
+x /16c $a1
+
+00400900 <main>:
+  ...
+  400ba4: 8fdc0010  lw  gp,16(s8)
+  400ba8: 0c1007fb  jal 401fec <read_line> //读取输入
+  400bac: 00000000  nop
+  400bb0: 8fdc0010  lw  gp,16(s8)
+  400bb4: afc20020  sw  v0,32(s8) //将读得的数据存入栈
+  400bb8: 8fc40020  lw  a0,32(s8) //并放入$a0中供函数phase_1使用
+  400bbc: 0c10035b  jal 400d6c <phase_1>
+  ...
+  
+00400d6c <phase_1>:
+  400d6c:	27bdffe0 	addiu	sp,sp,-32 //调用子函数为当前函数开辟栈空间
+  400d70:	afbf001c 	sw	ra,28(sp)
+  400d74:	afbe0018 	sw	s8,24(sp)
+  400d78:	03a0f021 	move	s8,sp
+  400d7c:	afc40020 	sw	a0,32(s8) //将$a0（参数寄存器）的内容存入栈
+  400d80:	8fc40020 	lw	a0,32(s8)
+  400d84:	3c020040 	lui	v0,0x40
+  400d88:	2445276c 	addiu	a1,v0,10092 //加载另外一个参数到$a1
+  400d8c:	0c10073e 	jal	401cf8 <strings_not_equal> //跳转以执行函数，比较字符串$a0和$a1，相等则$v0 = 0，否则$v0 = 1
+  400d90:	00000000 	nop
+  400d94:	10400003 	beqz	v0,400da4 <phase_1+0x38> //条件转移，若$v0 == 0则跳至0x00400da4处，执行后面的指令
+  400d98:	00000000 	nop
+  400d9c:	0c10087c 	jal	4021f0 <explode_bomb> //否则若$v0 == 1则跳转，执行爆炸
+  400da0:	00000000 	nop
+  400da4:	03c0e821 	move	sp,s8
+  400da8:	8fbf001c 	lw	ra,28(sp)
+  400dac:	8fbe0018 	lw	s8,24(sp)
+  400db0:	27bd0020 	addiu	sp,sp,32
+  400db4:	03e00008 	jr	ra
+  400db8:	00000000 	nop
+
+
+
+KeyNote:使$a0与$a1的内容相等，即查看$a1中存储的内容，输入相同的内容即可。
+Let's begin now!
