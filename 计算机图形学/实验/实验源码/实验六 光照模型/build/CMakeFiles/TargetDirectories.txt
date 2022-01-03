@@ -1,0 +1,3 @@
+/home/cs18/桌面/Code/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/桌面/Code/build/CMakeFiles/Rasterizer.dir
+/home/cs18/桌面/Code/build/CMakeFiles/edit_cache.dir
