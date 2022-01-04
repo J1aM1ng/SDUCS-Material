@@ -8,6 +8,7 @@
 ### 必修课
 
 * [程序设计思维与实践](https://github.com/J1aM1ng/ACMpractice)
+* [数据结构](./数据结构)
 * [数据结构课程设计](https://github.com/J1aM1ng/DS-courseDesign)
 * [操作系统](./操作系统OS)
 * [计算机系统原理](./计算机系统原理)
