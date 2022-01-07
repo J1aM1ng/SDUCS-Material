@@ -1,0 +1,37 @@
+题目：数据库课程设计实验二 （课设第3-4周）
+目的：学习、实践数据库逻辑设计
+
+内容：
+0. 优秀技术专题展示学习。
+
+1. 数据库逻辑设计：
+1.1 参考课程网中的“学习资料”，学习课件“3 数据库逻辑设计”和其中的案例；
+    参照“数据库设计与实现”、案例和课本相关部分，对自己的系统进行初步数据库逻辑设计。
+
+1.2 中国大学MOOC：数据库系统概论（高级篇），第5-13讲（尤其 第8讲 数据库逻辑设计）
+ https://www.icourse163.org/learn/RUC-1001655006?tid=1003305007#/learn/content
+
+2.继续完善之前需求分析资料和概念设计E-R图。（注意不要直接复制、粘贴参考资料）
+
+3.逐步书写系统文档中的逻辑设计部分（包括“数据字典”、优化将E-R图转换为表 等内容）。
+
+4.继续学习开发技术、熟悉平台环境。（见附录）
+
+将所写的逻辑设计部分初稿和填写的实验报告打包提交。（2周时间，截止时间12月6日。）
+
+------附录-----------------
+附录1：同学展示介绍的相关工具。
+
+附录2：前端设计框架bootstrap介绍及工具，
+Bootstrap是基于HTML、CSS、JavaScript开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。
+https://www.bootcss.com/  Bootstrap中文网  
+https://getbootstrap.com/ Bootstrap英文网
+https://www.runoob.com/bootstrap/bootstrap-tutorial.html  教程
+
+--BootStrap 设计工具---
+https://www.jdon.com/idea/js/bootstrap-tools-for-designers.html  四种最好的免费Bootstrap在线设计工具
+https://blog.csdn.net/delphiorang/article/details/78776845 15 个最好的 Bootstrap 设计工具推荐
+https://blog.csdn.net/namepan1985/article/details/78343397 3款强大的BootStrap的可视化制作工具推荐
+https://blog.csdn.net/adyuebanwan/article/details/89962348
+http://layoutit.justjavac.com/
+
