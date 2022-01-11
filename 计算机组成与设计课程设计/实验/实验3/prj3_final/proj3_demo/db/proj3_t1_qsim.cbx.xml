@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="proj3_t1_qsim">
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|lpm_mux:Mux2" CBX_FILE_NAME="mux_rrc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|CROM1:CROM1|altsyncram:altsyncram_component|altsyncram_23c1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux3" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|ram2:inst3|altsyncram:altsyncram_component|altsyncram_oqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux2" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|lpm_mux:Mux3" CBX_FILE_NAME="mux_rrc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux0" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|CROM1:CROM1|altsyncram:altsyncram_component|altsyncram_23c1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux0" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|ram2:inst3|altsyncram:altsyncram_component|altsyncram_oqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux3" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|lpm_mux:Mux0" CBX_FILE_NAME="mux_rrc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux1" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|CROM1:CROM1|altsyncram:altsyncram_component|altsyncram_23c1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux1" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|ram2:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_oqj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|ram2:inst3|altsyncram:altsyncram_component|altsyncram_oqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux0" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|lpm_mux:Mux1" CBX_FILE_NAME="mux_rrc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux2" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|CROM1:CROM1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_23c1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|CROM1:CROM1|altsyncram:altsyncram_component|altsyncram_23c1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux2" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|ram2:inst3|altsyncram:altsyncram_component|altsyncram_oqj1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|lpm_mux:Mux1" CBX_FILE_NAME="mux_jtc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|proj3_t1|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|lpm_mux:Mux3" CBX_FILE_NAME="mux_jtc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

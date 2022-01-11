@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 128 176)
+	(text "cu" (rect 5 0 19 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLRN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "CLRN" (rect 21 27 52 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "SIG0" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "SIG0" (rect 64 27 91 41)(font "Arial" (font_size 8)))
+		(line (pt 112 32)(pt 96 32))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "SIG1" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "SIG1" (rect 64 43 91 57)(font "Arial" (font_size 8)))
+		(line (pt 112 48)(pt 96 48))
+	)
+	(port
+		(pt 112 64)
+		(output)
+		(text "SIG2" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "SIG2" (rect 64 59 91 73)(font "Arial" (font_size 8)))
+		(line (pt 112 64)(pt 96 64))
+	)
+	(port
+		(pt 112 80)
+		(output)
+		(text "SIG3" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "SIG3" (rect 64 75 91 89)(font "Arial" (font_size 8)))
+		(line (pt 112 80)(pt 96 80))
+	)
+	(port
+		(pt 112 96)
+		(output)
+		(text "SIG4" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "SIG4" (rect 64 91 91 105)(font "Arial" (font_size 8)))
+		(line (pt 112 96)(pt 96 96))
+	)
+	(port
+		(pt 112 112)
+		(output)
+		(text "SIG5" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "SIG5" (rect 64 107 91 121)(font "Arial" (font_size 8)))
+		(line (pt 112 112)(pt 96 112))
+	)
+	(port
+		(pt 112 128)
+		(output)
+		(text "SIG6" (rect 0 0 27 14)(font "Arial" (font_size 8)))
+		(text "SIG6" (rect 64 123 91 137)(font "Arial" (font_size 8)))
+		(line (pt 112 128)(pt 96 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 144))
+	)
+)

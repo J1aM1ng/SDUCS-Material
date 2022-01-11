@@ -1,0 +1,46 @@
+# do lab4.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab4
+# 
+# Top level modules:
+# 	lab4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab4_vlg_sample_tst
+# -- Compiling module lab4_vlg_check_tst
+# -- Compiling module lab4_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab4_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.lab4_vlg_vec_tst 
+# Loading work.lab4_vlg_vec_tst
+# Loading work.lab4
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_jtag
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading work.lab4_vlg_sample_tst
+# Loading work.lab4_vlg_check_tst
+# ** Warning: (vsim-3017) Waveform.vwf.vt(1605): [TFMPC] - Too few port connections. Expected 29, found 25.
+# 
+#         Region: /lab4_vlg_vec_tst/i1
+# ** Warning: (vsim-3722) Waveform.vwf.vt(1605): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# 
+# ** Warning: (vsim-3722) Waveform.vwf.vt(1605): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# 
+# ** Warning: (vsim-3722) Waveform.vwf.vt(1605): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# 
+# ** Warning: (vsim-3722) Waveform.vwf.vt(1605): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# 
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(1541)
+#    Time: 1 us  Iteration: 0  Instance: /lab4_vlg_vec_tst/tb_out

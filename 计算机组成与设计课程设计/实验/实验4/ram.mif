@@ -1,0 +1,88 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=8;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	000  :   00011000;
+	001  :   00000101;
+	002  :   00101001;
+	003  :   00000001;
+	004  :   01000001;
+	005  :   00110111;
+	006  :   10000000;
+	007  :   00011000;
+	008  :   00000101;
+	009  :   00101001;
+	00A  :   00000010;
+	00B  :   01010001;
+	00C  :   00110111;
+	00D  :   10000001;
+	00E  :   00011000;
+	00F  :   00000101;
+	010  :   00101001;
+	011  :   00000010;
+	012  :   11000001;
+	013  :   00110111;
+	014  :   10000010;
+	015  :   00011000;
+	016  :   00001000;
+	017  :   00101001;
+	018  :   00011000;
+	019  :   10000001;
+	01A  :   00110111;
+	01B  :   10000011;
+	01C  :   00011000;
+	01D  :   00010000;
+	01E  :   00101001;
+	01F  :   00001000;
+	020  :   01110001;
+	021  :   00110111;
+	022  :   10000100;
+	[023..024]  :   00011000;
+	025  :   10010001;
+	026  :   00110111;
+	027  :   10000101;
+	028  :   00011000;
+	029  :   00010010;
+	02A  :   00101001;
+	02B  :   00100010;
+	02C  :   01100001;
+	02D  :   00110111;
+	02E  :   10000110;
+	02F  :   00011000;
+	030  :   00001000;
+	031  :   11010001;
+	032  :   00110111;
+	033  :   10000111;
+	034  :   00011000;
+	035  :   00001000;
+	036  :   11100001;
+	037  :   00110111;
+	038  :   10001000;
+	039  :   10111101;
+	03A  :   01000000;
+	03B  :   00110111;
+	03C  :   10001001;
+	03D  :   10100000;
+	[03E..03F]  :   00000000;
+	040  :   11111111;
+	[041..0FF]  :   00000000;
+END;
