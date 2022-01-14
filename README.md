@@ -11,6 +11,7 @@
 
 * [程序设计思维与实践](https://github.com/J1aM1ng/ACMpractice)
 * [算法设计与分析](./算法设计与分析)
+* [离散数学](./离散数学)
 * [数据结构与算法](./数据结构与算法)
 * [数据结构与算法课程设计](https://github.com/J1aM1ng/DS-courseDesign)
 * [数据库系统](./数据库系统)
